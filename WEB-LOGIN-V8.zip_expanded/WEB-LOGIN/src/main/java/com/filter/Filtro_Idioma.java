@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletRequest;
  * @author Juan Antonio Solves Garcia.
  * @version 2.0
  */
-@WebFilter(description = "Deteccion de idioma de forma automatica", urlPatterns = { "/jsp/login.jsp" })
+@WebFilter(description = "Deteccion de idioma de forma automatica", urlPatterns = { "/index.jsp" })
 public class Filtro_Idioma implements Filter {
 	// PROPIEDADES DE CLASE PARA SU FUNCIONAMIENTO
 	private String idioma_defecto;
