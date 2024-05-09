@@ -1,0 +1,38 @@
+@charset "ISO-8859-1";
+
+/* ESTILO GENERAL PARA TODOS LOS DIV*/
+div {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* POSICION Y TAMAÑO DE LAS DISTINTAS ZONAS DE PRINCIPAL*/
+#banner {
+	position: absolute;
+	top: 5px;
+	left: 2px;
+	height: 100px;
+	width: 100%;
+	background-color: rgb(173, 216, 230);
+}
+
+#cuerpo {
+	position: absolute;
+	top: 107px;
+	left: 13%;
+	width: 90%;
+	height: 100%;
+	background-color: rgb(224, 255, 255);
+	border: 2 px;
+	border-style: double;
+	border-color: purple;
+}
+
+#menu {
+	position: absolute;
+	top: 107px;
+	left: 2px;
+	width: 12%;
+	height: 100%;
+	background-color: rgb(135, 206, 250);
+}
