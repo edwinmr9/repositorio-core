@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN"
+                        "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
+
+<taglib>
+	<!-- DEFINICION DEL DOCUMENTO, ETIQUETAS OBLIGATORIAS -->
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>2.0</jsp-version>
+	<short-name>libreria propia</short-name>
+	<uri>http://com.jsg</uri>
+
+	<!-- CABECERA MENU PERSONALIZADO -->
+	<tag>
+		<name>cabecera_menu</name>
+		<tag-class>com.etiquetas.Cabecera_Menu</tag-class>
+		<body-content>tagdependent</body-content>
+		<description>CREACION DE UNA CABECERA DE MENU PERSONALIZADA</description>
+	</tag>
+
+	<!-- CREACION DE LA RUTA DE LA APLICACION -->
+	<tag>
+		<name>ruta_servidor</name>
+		<tag-class>com.etiquetas.Ruta_DinamicaAplicacion</tag-class>
+		<body-content>tagdependent</body-content>
+		<description>Generacion dinamica de la ruta del servidor para las
+			peticiones de recursos estaticos via navegador</description>
+	</tag>
+	
+	<!-- ETIQUETA PARA CREAR LA RUTA DE LA APLICACION -->
+	<tag>
+		<!-- DEFINICION DE LA ETIQUETA -->
+		<name>ruta-parametro</name>
+		<tag-class>com.etiquetas.Ruta_DinamicaAplicacionParametro</tag-class>
+		<body-content>tagdependent</body-content>
+		<description>Generacion dinamica de la ruta de la aplicacion con la
+			ayuda de un parametro</description>
+		<!-- DEFINICION DEL O LOS ATRIBUTOS DE LA ETIQUETA -->
+		<attribute>
+			<name>contexto_peticion</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<description>Atributo para pasar a la etiqueta el contexto de sesion.</description>
+		</attribute>
+	</tag>
+
+</taglib>                
+                        
